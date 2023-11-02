@@ -1,0 +1,130 @@
+/* *{
+    border: 1px solid rgba(255, 0, 0, 0.526);
+    padding: 0;
+    margin: 0;
+} */
+
+.mainContainer{
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-columns: 1fr;
+    background-image: radial-gradient(white,rgba(127, 255, 161, 0.459));
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 80%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.addBook-Btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#addBookBtn{
+    width: 90px;
+    height: 45px;
+    border-style: none;
+    border-radius: 16px;
+    background-color: rgb(127, 255, 161);
+}
+
+dialog{
+    padding: 0;
+    border-radius: 8px;
+    border: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 400px;
+    background-image: radial-gradient(white,rgba(127, 255, 161, 0.459));
+    padding: 40px;
+}
+
+input{
+    background-color: aquamarine;
+    outline: none;
+    border: rgb(255, 255, 255);
+    border-radius: 3px;
+    height: 20px;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid rgb(69, 91, 83);
+}
+
+.diaBtn{
+    border-style: hidden;
+    background-color: rgba(147, 255, 204, 0.744);
+    padding: 4px;
+    border-radius: 6px;
+}
+
+::backdrop{
+    background-image: linear-gradient(90deg,black,white);
+    opacity: 0.75;
+}
+
+.data-table{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow: scroll;
+}
+
+/* table, th,td{
+    border: 1px solid;
+} */
+table{
+    width: 80%;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+thead{
+    height: 20%;
+}
+th,td{
+    text-align: center;
+    vertical-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.delBtn{
+    border-style: hidden;
+    background-color: rgba(250, 150, 156, 0.744);
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;  
+}
+.footer > p > a {
+    text-decoration: none;
+    color: black;
+}
+.footer > p > a:hover {
+    color: black;
+    padding: 2px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
