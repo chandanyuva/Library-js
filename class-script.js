@@ -4,7 +4,10 @@ const input=addBookDialoge.querySelectorAll("form > input");
 const confirmBtn=addBookDialoge.querySelector("#confirmBtn");
 const table=document.getElementById("booksDisplay");
 
+
+console.log(addBookDialoge.open);
 addBookDialogeBtn.addEventListener("click",()=>{
+    console.log(addBookDialoge.open);
     addBookDialoge.showModal();
 });
 
@@ -31,7 +34,7 @@ function addBookToLibrary(nodeList){
     author=nodeList[0].value;
     title=nodeList[1].value;
     noPages=nodeList[2].value;
-    console.log(nodeList[3]);
+    // console.log(nodeList[3]);
     read_status=nodeList[3].checked;
     let book=new Book(author,title,noPages,read_status);
     myLibrary.push(book)
